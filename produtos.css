@@ -1,0 +1,81 @@
+.img img{
+    width: 900px;
+    height: 400px;
+  }
+  .tudo{
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    margin-top: 60px;
+  }
+ 
+ 
+  .perguntatotal {
+    margin-top: 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+  .faq-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+  }
+  details {
+    background-color: #ffffff;
+    color: #000000;
+    height: 50px;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    transition: 0.3s ease-in-out;
+    position: relative;
+  }
+  
+.filtro{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+  
+  details[open] {
+    height: 140px;
+  }
+  
+  summary {
+    list-style: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-top: 16px;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  .icon {
+    font-size: 18px;
+    color: #000000;
+    transition: transform 0.3s;
+  }
+  
+  details[open] .icon {
+    transform: rotate(180deg);
+  }
+  .faq-container p {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .faq-container a {
+    text-decoration: none;
+    color: #000000;
+  }

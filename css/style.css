@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #B7A7EC;
+    padding: 20px;
+    z-index: 1000; 
+    height: 150px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    width: 100%; 
+    margin: 0;
+}
+header img{
+  width: 200px;
+}
+.nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: flex;
+}
+.nav li{
+    list-style: none;
+}
+.nav-list{
+    display: flex;
+    gap: 90px;
+    background: #f5f5f5;
+    width: 840px;
+    height: 50px;
+    align-items: center;
+    margin-top: 50px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.links{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+.links a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 54px;
+    flex: 1;
+    gap: 8px;
+    width: 900px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+  }
+  
+  .input-field:focus {
+    outline: none;
+  }
+  
+  .input-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    color: rgb(0, 0, 0);
+  }
+  .swiper {
+    width: 100%;
+    height: 500px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  /* Banner principal */
+  .banner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Imagem */
+  .banner .imagem {
+    flex: 2;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Texto */
+  .banner .texto {
+    flex: 1;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+ 
+  /* Botões de navegação */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #000000;
+  }
+
+  /* Paginação */
+  .swiper-pagination-bullet {
+    background-color: #000;
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #000;
+    opacity: 1;
+  }
+/* Cor padrão dos bullets */
+/* Estilos para os bullets inativos */
+.swiper-pagination-bullet {
+  background-color: #7a7a7a !important; /* Cor dos bullets inativos */
+  opacity: 0.5 !important;
+}
+
+/* Estilos para o bullet ativo */
+.swiper-pagination-bullet-active {
+  background-color: #B7A7EC !important; /* Cor do bullet ativo */
+  opacity: 1 !important;
+}
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .banner {
+      flex-direction: column;
+    }
+    .swiper{
+        width: 100%;
+    }
+    .banner .imagem {
+      flex: 1;
+      height: 50%;
+    }
+    .banner .texto {
+      flex: 1;
+      height: 50%;
+    }
+  
+  }
+  @media (min-width: 1208px) {
+    .swiper {
+      width: 50%;
+    }
+ 
+  }
+  @media screen and (max-width: 768px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none !important;
+    }
+  }
+
+  .meu-carrossel {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+  .meu-carrossel .swiper-slide {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  .meu-carrossel .swiper-slide img {
+    width: 100%;
+    max-width: 300px;
+
+    margin-bottom: 10px;
+  }
+  .product-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .product-price {
+    font-size: 1em;
+    color: #000000;
+  }
+  .product-p{
+    color: rgb(151, 151, 151);
+    margin-bottom: 30px;
+  }
+  .novidades{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 40px;
+    color: #B7A7EC;
+  }
+.mais-vendidos{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 40px;
+  color: #B7A7EC
+}
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 800px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .grid2{
+    width: 500px;
+    height: 400px;
+    aspect-ratio: 1 / 4;
+  }
+  
+  .grid1{
+    height: 820px;
+    width: 700px;
+  }
+  .grid-item:nth-child(1){
+   grid-row: 1/3;
+  }
+  .grid-item{
+    display: grid;
+    position: relative;
+  }
+  .grid-item img{
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: end;
+    margin: 0 auto;
+    display: block;
+
+  }
+  .teste{
+    text-align: center;
+    justify-content: center;
+  }
+ .teste h2{
+  font-size: 30px;
+  margin-top: 20px;
+ }
+  #btn-submit {
+    width: 100px;
+    height: 40px;
+    color: #B7A7EC; 
+    background: white;
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  #btn-submit:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+  }
+
+  #btn-submit:active {
+    background-color: #ffffff;
+    transform: scale(0.95);
+  }
+  .formulario-email{
+    margin-top: 20px;
+  }
+  .novidade {
+    display: flex;
+    background: #B7A7EC;
+    align-items: center;
+    text-align: end;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 300px;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .contato form {
+    display: flex;
+    gap: 5px;
+  }
+  .contato #btn-submit {
+    height: 60px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    background: #bd00ff;
+    color: #fff;
+  }
+  .novidade h2 {
+    color: white;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    background: white;
+    padding: 30px 30px;
+    border-radius: 50px;
+    color: #B7A7EC;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    color: #B7A7EC; 
+    font-weight: 900px;
+  }
+  
