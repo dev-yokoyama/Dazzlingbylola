@@ -32,3 +32,9 @@ var swiper = new Swiper('.mySwiper', {
     },
   },
 });
+function alterarTextoBotao(){
+  const botao = document.getElementById('btn-submit');
+  botao.value ='Obrigado';
+  botao.disable = true;
+  return false;
+}

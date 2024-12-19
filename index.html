@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dazzling by lola</title>
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -30,7 +30,7 @@
         <a href=""><i class="bi bi-person-circle">Minha conta</i>
         </div>
     </header>
-    <nav class="nav">
+    <nav id="home" class="nav">
         <ul class="nav-list">
             <li><a href="">Maquiagem</a></li>
             <li><a href="">Perfumes</a></li>
@@ -180,56 +180,60 @@
         <div class="teste">
         <h2>Quer estar sempre por dentro? ❤️<br>
           Acompanhe tudo em primeira mão! 🌟👇</h2>
-        <form action="" class="formulario-email">
-          <input type="email" placeholder="Info@gmail.com" style="width: 70%;height: 48px; padding: 10px; margin: 5px; border-radius: 40px; border: none;">
-          <input type="submit" id="btn-submit" name="" value="Enviar" />
-        </form>
+          <form action="" class="formulario-email" onsubmit="return alterarTextoBotao()">
+            <input type="email" placeholder="Info@gmail.com" style="width: 70%;height: 48px; padding: 10px; margin: 5px; border-radius: 40px; border: none;outline: none;" required>
+            <input type="submit" id="btn-submit" value="Enviar" />
+          </form>
+           
       </div>
       </div>
       <div class="mais-vendidos">
   <h2>Produtos mais vendidos</h2>
 </div>
-      <div class="swiper meu-carrossel">
-        <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide">
-            <img src="img/pexels-karolina-grabowska-4041392.jpg" alt="Produto 1" />
-            <div class="product-name">Produto 1</div>
-            <div class="product-p">Coisas sobre o produtos</div>
-            <div class="product-price">R$ 50,00</div>
-          </div>
-          <!-- Slide 2 -->
-          <div class="swiper-slide">
-            <img src="https://via.placeholder.com/150" alt="Produto 2" />
-            <div class="product-name">Produto 2</div>
-            <div class="product-p">Coisas sobre o produtos</div>
-            <div class="product-price">R$ 70,00</div>
-          </div>
-          <!-- Slide 3 -->
-          <div class="swiper-slide">
-            <img src="https://via.placeholder.com/150" alt="Produto 3" />
-            <div class="product-name">Produto 3</div>
-            <div class="product-p">Coisas sobre o produtos</div>
-            <div class="product-price">R$ 90,00</div>
-          </div>
-          <!-- Slide 4 -->
-          <div class="swiper-slide">
-            <img src="https://via.placeholder.com/150" alt="Produto 4" />
-            <div class="product-name">Produto 4</div>
-            <div class="product-p">Coisas sobre o produtos</div>
-            <div class="product-price">R$ 120,00</div>
-          </div>
-          <!-- Slide 5 -->
-       
-      </div>
-      
-  <footer>
-<div>
-  <img src="img/dazzling-removebg-preview.png" alt="">
-  <i class="bi bi-instagram"></i>
-  <i class="bi bi-bag"></i>
+<div class="swiper meu-carrossel">
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <img src="img/pexels-karolina-grabowska-4041392.jpg" alt="Produto 1" />
+      <div class="product-name">Produto 1</div>
+      <div class="product-p">Coisas sobre o produto</div>
+      <div class="product-price">R$ 50,00</div>
+    </div>
+    <div class="swiper-slide">
+      <img src="https://via.placeholder.com/150" alt="Produto 2" />
+      <div class="product-name">Produto 2</div>
+      <div class="product-p">Coisas sobre o produto</div>
+      <div class="product-price">R$ 70,00</div>
+    </div>
+  </div>
+  <div class="swiper-slide">
+    <img src="img/pexels-karolina-grabowska-4041392.jpg" alt="Produto 1" />
+    <div class="product-name">Produto 1</div>
+    <div class="product-p">Coisas sobre o produto</div>
+    <div class="product-price">R$ 50,00</div>
+  </div>
+  <div class="swiper-slide">
+    <img src="https://via.placeholder.com/150" alt="Produto 2" />
+    <div class="product-name">Produto 2</div>
+    <div class="product-p">Coisas sobre o produto</div>
+    <div class="product-price">R$ 70,00</div>
+  </div>
 </div>
-  </footer>
+  <!-- Navegação -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+<footer>
+  <div class="links">
+  <a href="#home"><img src="img/dazzling-removebg-preview.png" alt=""></a>
+  <div class="redes">
+  <i class="bi bi-instagram"></i>
+  <i class="bi bi-tiktok"></i>
+</div>
+  <h2>formas de pagamento</h2>
+</div>
+</footer>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="js/script.js"></script>
 </body>
